@@ -29,4 +29,4 @@ while True:
                 break
         item.pop(item_to_delete)
     else:
-        print("Xin hãy nhập C,R,U,D hoặc c,r,u,d")
+        print("Xin hãy nhập C,R,U,D")
