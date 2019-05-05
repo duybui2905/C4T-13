@@ -5,7 +5,7 @@ my_mov = {
     'year' : 2014,
 }
 # print(my_mov)
-my_mov['country'] = 'the US'
+my_mov['country'] = 'USA'
 # print(my_mov)
 for k,v in my_mov.items():
     print(k, '-', v)
@@ -24,6 +24,3 @@ actors = my_mov['actors']
 
 # for i in actors:
 #     print(i)
-
-for k,v in my_mov.items():
-    print(k, ':', v)
