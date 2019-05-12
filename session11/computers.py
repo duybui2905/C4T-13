@@ -47,10 +47,19 @@ print(price)
 
 # comp = input('eneter a computer type: ').upper()
 # number = int(input('enter the number of computers you wanna buy: '))
-comp_number = input('eneter a computer type and the number: ').upper()
-a = comp_number.split(':')
-comp = a[0]
-number = int(a[1])
-computers[comp] = computers[comp] - number
-print('the maintain', comp, 'computer is', computers[comp])
-print(computers) 
+
+#Sep
+# comp_number = input('enter a computer type and the number: ').upper()
+# a = comp_number.split(':')
+# comp = a[0]
+# number = int(a[1])
+# computers[comp] = computers[comp] - number
+# print('the maintain', comp, 'computer is', computers[comp])
+# print(computers)
+
+total_price = 0
+for a,b in zip(computers.values(), price.values()):
+    c = a * b
+    print(c)
+    total_price += c
+print('the total price is', total_price)
