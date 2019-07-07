@@ -1,0 +1,13 @@
+echo "# C4T-13" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/duybui2905/C4T-13.git
+git push -u origin master
+
+Duyphysics2905
+
+git add .
+git status
+git commit -m "first commit"
+git push -u origin master

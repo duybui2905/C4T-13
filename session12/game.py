@@ -14,12 +14,16 @@ K = {
     "x":1,
     "y":3
 }
+W = {
+    "x":1,
+    "y":1
+}
 key_storage=0
 while True:
     for y in range(map["y"]):
         for x in range(map["x"]):
             # P_is_here = False
-            if x ==P["x"]and y ==P["y"]:
+            if x==P["x"]and y==P["y"]:
                 print("P",end=" ")
                 # P_is_here = True
             elif E["x"]==x and E["y"]==y:
@@ -29,6 +33,8 @@ while True:
                     print('K', end=' ')
                 else:
                     print('-',end=' ')
+            elif W['x']==x and W['y']==y:
+                print('W', end=' ')
             else:
                 print('-', end = ' ')
             # ------------------------
@@ -61,5 +67,3 @@ while True:
     if P["x"] == K["x"] and P["y"] == K["y"]:
         key_storage+=1
         print("You’ve just picked up a key!!!")
-    
-
